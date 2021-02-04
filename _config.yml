@@ -1,0 +1,75 @@
+# ----
+# Site
+
+title: سادگی کد
+url: "https://codesimplicity.ir"
+baseurl:
+google_analytics_key:
+logo: /siteicon.png
+description: اصول اولیه نرم‌افزار
+author:
+  name: محسن محمدی و الیاس سهرابی
+  email:
+    - mohsenm@pm.me
+    - mh.sohrabi1578@gmail.com
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_chapters/1-introduction.md"
+    values:
+      permalink: "/"
+      layout: "chapter"
+  -
+    scope:
+      path: "full.html"
+    values:
+      layout: "chapters"
+      toc: "hash"
+  -
+    scope:
+      type: "chapters"
+    values:
+      layout: "chapter"
+
+collections:
+  chapters:
+    output: true
+  extras:
+
+# ----
+# CloudCannon
+
+_options:
+  content:
+    format: "h3 h4 h5 h6 p"
+    bold: true
+    italic: true
+    removeformat: true
+    link: true
+    blockquote: true
+    numberedlist: true
+    bulletedlist: true
+    image: true
+    underline: true
+    table: true
+
+_comments:
+  cover_image: Used as the background of the book cover.
+  table_of_contents: Shows/hides the tables of contents.
