@@ -2,7 +2,8 @@
 # Site
 
 title: سادگی کد
-url: Shreddderman.github.io
+url: https://shreddderman.github.io
+baseurl: /codesimplicity
 google_analytics_key:
 logo: /siteicon.png
 description: اصول اولیه نرم‌افزار
