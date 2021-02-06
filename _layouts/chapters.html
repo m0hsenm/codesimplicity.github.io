@@ -25,7 +25,7 @@ layout: default
 	<div class="wrap">
 		<hr>
 		{% assign postface = site.extras | where: 'title', 'Postface' | first %}
-		<h2>Postface</h2>
+		<h2>درباره نویسنده</h2>
 		<p class="editor-link"><a href="cloudcannon:collections/{{ postface.path }}" class="btn"><strong>&#9998;</strong> Edit Postface</a></p>
 		{{ postface.content | markdownify }}
 	</div>
