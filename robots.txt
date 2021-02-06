@@ -1,7 +1,6 @@
 ---
 layout: null
-sitemap: true
+sitemap: false
 ---
 User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
 Disallow: /contact-success/
